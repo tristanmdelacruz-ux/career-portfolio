@@ -1,0 +1,20 @@
+body {
+    font-family: 'Arial Black', sans-serif;
+    background-color: #F2E9E4;
+    color: black;
+}
+
+h1 {
+    color: #black;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 30px;
+}
+
+nav a {
+    color: black;                 /* sets the color of the link to white */
+    text-decoration: none;          /* removes the underline */
+    padding: 50px 100px;            /* 50px is the vertical padding, 100px is the horizontal padding */
+    align-items: center;             /* centers the text vertically */
+}
+

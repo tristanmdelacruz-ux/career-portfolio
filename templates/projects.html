@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/style.css">
+        <title>PROJECTS</title>
+    </head>
+    <body>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About Me</a>
+            <a href="/projects">Projects</a>
+        </nav>
+        <h1>{{project.name}}</h1>
+        <p>{{project.overview}}</p>
+        <p>{{project.role}}</p>
+        <p>{{project.skills|join(", ")}}</p>
+    </body>
+</html>
