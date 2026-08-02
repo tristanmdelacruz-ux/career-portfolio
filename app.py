@@ -4,11 +4,12 @@ from flask import Flask, render_template                #importing toolboxes
 app = Flask(__name__)                                   #starts the website]
 
 project_rc_rover = {                                         #importing project one for the project section. importing the important info
-"name":  "Remote Controlled Rover",  
-"date": "September 2023 - December 2023",               
-"overview":  "As a freshman in college, I was tasked to build a robotic arm of to combine a tank a wooden chassis and 3d printed end-effector",
-"role": "Mechanical Engineering Subteam Member",
-"skills": ["Solidworks", "3D Printing"],
+"name":  "MARS ROVER WHEEL HUB",  
+"date": "September 2023 - December 2023",  
+"role": "Dynamics Engineer",             
+"overview":  """Designed with inspiration from Military Tanks, this Wheel Hub to be used sustain 100+ pounds of weight
+using aliumimun sheet metal and 3D printed housings and wheel""",
+
 }
 
 @app.route("/")                                         #first page = home
