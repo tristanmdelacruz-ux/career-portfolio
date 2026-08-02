@@ -3,18 +3,31 @@
 <html>
     <head>
         <link rel="stylesheet" href="/static/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap" rel="stylesheet">  <!-- importing Bebas Neue as a font family -->
         <title>PROJECTS</title>
     </head>
+
     <body>
         <nav>
             <a href="/">Home</a>
             <a href="/about">About Me</a>
             <a href="/projects">Projects</a>
         </nav>
-        <h1>{{project.name}}</h1>
-        <h2>{{project.date}}</h2>
-        <p>{{project.overview}}</p>
-        <p>{{project.role}}</p>
-        <p>{{project.skills|join(", ")}}</p>
+
+        <div class="project-container">
+            <div class="project-left">
+                <h1>{{project.name}}</h1>
+                <h2>{{project.date}}</h2>
+                <p>{{project.overview}}</p>
+                <p>{{project.role}}</p>
+                <p>{{project.skills|join(", ")}}</p>
+            </div>
+            <div class="project-right">
+                <img src="/static/LEGACY_Wheel_Hub.png" alt="Tank Steering Wheel Hub CAD Model">
+                <p>Tank Steering Wheel Hub CAD Model</p>
+            </div>
+        </div>
+
     </body>
+
 </html>
