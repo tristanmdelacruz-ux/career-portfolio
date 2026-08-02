@@ -5,7 +5,8 @@ body {
 }
 
 h1 {
-    color: #black;
+    color: #blue;
+    font-family: 'Arial Black', sans-serif;
     text-align: center;
     font-size: 60px;
     margin-top: 30px;
@@ -18,3 +19,10 @@ nav a {
     align-items: center;             /* centers the text vertically */
 }
 
+h2 {
+    color: #blue;
+    font-family: 'Arial Black', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+}
