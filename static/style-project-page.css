@@ -30,26 +30,49 @@ h2 {
     text-align: center;
     font-size: 20px;
     margin-top: 0.25px;
+    margin-bottom: 1px;
 }
 
 h3 {
+    color: black;
     font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0.25px;
 }
 
-.project-container { /* container for the project sections */
+.project-LEGACYWHEELHUB { /* container for the project sections */
     display: flex;
 }
 
-.project-left {  /* container for the left section of the project */
+.project-LEGACYWHEELHUB-left {  /* container for the left section of the project */
     width: 60%;
 }
 
-.project-right { /* container for the right section of the project */
+.project-LEGACYWHEELHUB-right { /* container for the right section of the project */
     width: 40%;
     text-align: center;
     margin-top: 30px;
 }
 
-.project-right img{
+.project-LEGACYWHEELHUB-right img{
+    width: 75%;
+}
+
+.project-HXBELLCRACKSUSPENSION { /* container for the project sections */
+    display: flex;
+}
+
+.project-HXBELLCRACKSUSPENSION-left {  /* container for the left section of the project */
+    width: 60%;
+}
+
+.project-HXBELLCRACKSUSPENSION-right { /* container for the right section of the project */
+    width: 40%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.project-HXBELLCRACKSUSPENSION-right img{
     width: 75%;
 }
