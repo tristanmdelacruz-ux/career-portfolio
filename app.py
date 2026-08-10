@@ -3,33 +3,52 @@ from flask import Flask, render_template                #importing toolboxes
 
 app = Flask(__name__)                                   #starts the website
 
-project_SUSPENSION_TESTRIG = {
-    "name": "Suspension Test Rig (conceptual)",
-    "date": "December 2025 - June 2026",
-    "role": "Dynamics Engineer",
-    "overview": """Involved with my college engineering project, UCI HyperXite. I wanted to build a suspension test rig as
-    my team was waiting for our parts to arrive. I took inspiration from research papers and took consideration of what we already
-    have in our lab space as it combines penumatics, spare aluminum extrusions, and spare test parts""",
+project_HXSUSPENSION_TESTRIG = {
+"name": "Suspension Test Rig (conceptual)",
+"date": "December 2025 - June 2026",
+"role": "Dynamics Engineer",
+"overview": """Involved with my college engineering project, UCI HyperXite. I wanted to build a suspension test rig as
+my team was waiting for our parts to arrive. I took inspiration from research papers and took consideration of what we already
+have in our lab space as it combines penumatics, spare aluminum extrusions, and spare test parts""",
 
 }
 
-project_LEGACYWHEELHUB = {                                         #importing project one for the project section. importing the important info
-"name":  "MARS ROVER WHEEL HUB",  
-"date": "September 2023 - December 2023",  
-"role": "Dynamics Engineer",             
-"overview":  """Designed with inspiration from Military Tanks, this Wheel Hub to be used sustain 100+ pounds of weight
-using aliumimun sheet metal and 3D printed housings and wheel""",
-
+project_HXLATERALSUSPENSION = {
+"name": "Lateral Shock Absorber Suspension System",
+"date": " July 2025 - June 2026",
+"role": "Dynamics Engineer",
+"overview": """Involved with my college engineering project, UCI HyperXite. We were tasked to completely redesign the lateral suspension of the 
+UCI HyperPod 11. The purpose of the Lateral Suspension System is to ensure that the pod only moves in the forward direction and does not
+deviates off the track.""",
 }
+
 
 project_HXBELLCRACKSUSPENSION = {                                         #importing project one for the project section. importing the important info
-"name":  "Bell Crank Lateral Suspension System",  
+"name": "Bell Crank Lateral Suspension System",  
 "date": "July 2025 - July 2026",  
 "role": "Dynamics Engineer",             
 "overview":  """Designed the Lateral Susepension System for a Hyperloop Pod. It purpose is to restrict movement of a 100+ kg pod in the 
 lateral direction. The syste is designed to experience more load in purposed to experience more oscillations as last year's suspenion system was
 overdamped.""",
 
+}
+
+
+project_LEGACYWHEELHUB = {                                         #importing project one for the project section. importing the important info
+"name":  "Mars Rover Wheel Hub",  
+"date": "September 2025 - December 2025",  
+"role": "Dynamics Engineer",             
+"overview":  """Designed with inspiration from Military Tanks, this Wheel Hub to be used sustain 100+ pounds of weight
+using aliumimun sheet metal and 3D printed housings and wheel""",
+
+}
+
+
+project_FEPREMOTEDRONE ={
+"name": "Remote Controlled Precision Cargo Drone",
+"date": "June 2025 - March 2026",
+"role": "Mechanical Engineer",
+"overview": """As a mechanical engineer""",
 }
 
 
