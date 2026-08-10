@@ -42,45 +42,27 @@ h3 {
 }
 
 p{
-    color: black
+    color: black;
     font-family: 'Bebas Neue', sans-serif;
-    margin-top: 100px;
+    margin-top: 75px;
     text-align: center
 
 }
 
-.project-LEGACYWHEELHUB { /* container for the project sections */
+.project-container { /* container for the project sections */
     display: flex;
 }
 
-.project-LEGACYWHEELHUB-left {  /* container for the left section of the project */
+.project-left {  /* container for the left section of the project */
     width: 60%;
 }
 
-.project-LEGACYWHEELHUB-right { /* container for the right section of the project */
+.project-right { /* container for the right section of the project */
     width: 40%;
     text-align: center;
     margin-top: 30px;
 }
 
-.project-LEGACYWHEELHUB-right img{
-    width: 75%;
-}
-
-.project-HXBELLCRACKSUSPENSION { /* container for the project sections */
-    display: flex;
-}
-
-.project-HXBELLCRACKSUSPENSION-left {  /* container for the left section of the project */
-    width: 60%;
-}
-
-.project-HXBELLCRACKSUSPENSION-right { /* container for the right section of the project */
-    width: 40%;
-    text-align: center;
-    margin-top: 30px;
-}
-
-.project-HXBELLCRACKSUSPENSION-right img{
-    width: 75%;
+.project-right img {
+    width: 60%
 }

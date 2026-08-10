@@ -15,36 +15,24 @@
         </nav>
 
         <h1>- PROJECTS -</h1> <!-- main header of the page-->
-
-        <div class="project-LEGACYWHEELHUB">  <!-- container for the project section-->
+        
+        
+        {% for project in projects %}
+        <div class="project-container">  <!-- container for the project section-->
             
-            <div class="project-LEGACYWHEELHUB-left"> <!-- dividing the text into the left column-->
+            <div class="project-left"> <!-- dividing the text into the left column-->
                 <h1>{{project.name}}</h1>
                 <h2>{{project.date}}</h2>
                 <h3>{{project.role}}</h3>
                 <p>{{project.overview}}</p>
             </div>
-            <div class="project-LEGACYWHEELHUB-right"> <!-- dividing the text into the right column-->
-                <img src="/static/LEGACY_Wheel_Hub.png" alt="Tank Steering Wheel Hub CAD Model">  <!-- image import -->
+            <div class="project-right"> <!-- dividing the text into the right column-->
+                <img src="/static/{{project.image}}" alt="Error">  <!-- image import -->
                 <p>Click Here for my Timeline!</p> <!-- caption-->
             </div>
 
         </div>
-
-        <div class="project-HXBELLCRACKSUSPENSION">
-
-            <div class="project-HXBELLCRACKSUSPENSION-left">
-                <h1>{{project2.name}}</h1>
-                <h2>{{project2.date}}</h2>
-                <h3>{{project2.role}}</h3>
-                <p>{{project2.overview}}</p>
-            </div> <!-- dividing the text into the left column-->
-
-            <div class="project-HXBELLCRACKSUSPENSION-right">
-                <img src="/static/HX_BELL_CRANK.png" alt="Bell Crank Lateral Suspension">
-                <p>Click here for my Timeline!</p>
-            </div>
-        </div>
+        {% endfor %}
 
     </body>
 
