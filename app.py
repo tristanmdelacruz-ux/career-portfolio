@@ -5,11 +5,11 @@ app = Flask(__name__)                                   #starts the website
 
 project_SUSPENSION_TESTRIG = {
     "name": "Suspension Test Rig (conceptual)",
-    "date": "December 2025 - June 2026"
-    "role": "Dynamics Engineer"
+    "date": "December 2025 - June 2026",
+    "role": "Dynamics Engineer",
     "overview": """Involved with my college engineering project, UCI HyperXite. I wanted to build a suspension test rig as
     my team was waiting for our parts to arrive. I took inspiration from research papers and took consideration of what we already
-    have in our lab space as it combines penumatics, spare aluminum extrusions, and spare test parts"""
+    have in our lab space as it combines penumatics, spare aluminum extrusions, and spare test parts""",
 
 }
 

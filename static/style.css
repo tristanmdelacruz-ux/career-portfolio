@@ -1,16 +1,15 @@
 body {
     font-family: 'Bebas Neue', sans-serif;  /* sets the font family to Bebas Neue */
-    background-color: #F2E9E4;
+    background-color: #white;
     color: black;
 }
 
 h1 {
-    color: blue;
+    color: black;
     font-family: 'Bebas Neue', sans-serif;  /* sets the font family to Bebas Neue */
     text-align: center;
     font-size: 40px;
-    margin-top: 30px;
-    margin-bottom: 1px;
+    margin-top: 100px;
 }
 
 nav a {
@@ -21,13 +20,6 @@ nav a {
     align-items: center;             /* centers the text vertically */
 }
 
-h2 {
-    color: blue;
-    font-family: 'Bebas Neue', sans-serif;
-    text-align: center;
-    font-size: 20px;
-    margin-top: 0.25px;
-}
 
 .project-container {
     display: flex;
