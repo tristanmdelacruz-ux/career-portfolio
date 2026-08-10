@@ -41,6 +41,14 @@ h3 {
     margin-top: 0.25px;
 }
 
+p{
+    color: black
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 50px;
+    text-align: center
+
+}
+
 .project-LEGACYWHEELHUB { /* container for the project sections */
     display: flex;
 }
