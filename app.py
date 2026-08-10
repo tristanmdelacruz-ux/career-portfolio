@@ -1,7 +1,17 @@
 # idk what i am doing 7/19/2026
 from flask import Flask, render_template                #importing toolboxes
 
-app = Flask(__name__)                                   #starts the website]
+app = Flask(__name__)                                   #starts the website
+
+project_SUSPENSION_TESTRIG = {
+    "name": "Suspension Test Rig (conceptual)",
+    "date": "December 2025 - June 2026"
+    "role": "Dynamics Engineer"
+    "overview": """Involved with my college engineering project, UCI HyperXite. I wanted to build a suspension test rig as
+    my team was waiting for our parts to arrive. I took inspiration from research papers and took consideration of what we already
+    have in our lab space as it combines penumatics, spare aluminum extrusions, and spare test parts"""
+
+}
 
 project_LEGACYWHEELHUB = {                                         #importing project one for the project section. importing the important info
 "name":  "MARS ROVER WHEEL HUB",  
@@ -21,6 +31,7 @@ lateral direction. The syste is designed to experience more load in purposed to 
 overdamped.""",
 
 }
+
 
 @app.route("/")                                         #first page = home
 def home():
