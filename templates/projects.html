@@ -3,7 +3,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="/static/style-project-page.css"> <!-- Linking what style this page will be formatted in. In style.css-->
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap" rel="stylesheet">  <!-- importing Bebas Neue as a font family -->
+        <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
         <title>PROJECTS</title> <!-- title of the page-->
     </head>
 
@@ -24,7 +24,7 @@
                 <h1>{{project.name}}</h1>
                 <h2>{{project.date}}</h2>
                 <h3>{{project.role}}</h3>
-                <p>{{project.overview}}</p>
+                <h2>{{project.overview}}</h2>
             </div>
             <div class="project-right"> <!-- dividing the text into the right column-->
                 <img src="/static/{{project.image}}" alt="Error">  <!-- image import -->
