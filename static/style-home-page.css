@@ -1,34 +1,51 @@
 body {
-    font-family: 'Bebas Neue', sans-serif;  /* sets the font family to Bebas Neue */
-    background-color: #white;
+    font-family: 'Fragment Mono', monospace;  /* sets the font family to Bebas Neue */
+    background-color: white;
     color: black;
 }
 
-h1 {
-    color: black;
-    font-family: 'Bebas Neue', sans-serif;  /* sets the font family to Bebas Neue */
-    text-align: center;
-    font-size: 40px;
-    margin-top: 100px;
+nav {
+    text-align: center;  /* centers the text vertically */
 }
 
 nav a {
     color: black;                 /* sets the color of the link to white */
-    font-family: 'Bebas Neue', sans-serif;
-    text-decoration: none;          /* removes the underline */
-    padding: 50px 100px;            /* 50px is the vertical padding, 100px is the horizontal padding */
-    align-items: center;             /* centers the text vertically */
+    font-family: 'Fragment Mono', monospace;
+    text-decoration: none;          /* removes the underline */            
+    padding: 10px 100px;
 }
 
-
-.project-container {
-    display: flex;
+h1 {
+    color: black;
+    font-family: 'Fragment Mono', monospace;  /* sets the font family to Bebas Neue */
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 1px;
 }
 
-.project-left {
-    width: 50%;
+h2 {
+    color: black;
+    font-family: 'Fragment Mono', monospace;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0.25px;
+    margin-bottom: 1px;
 }
 
-.project-right {
-    width: 50%;
+h3 {
+    color: black;
+    font-family: 'Fragment Mono', monospace;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0.25px;
+}
+
+p{
+    color: black;
+    font-family: 'Fragment Mono', monospace;
+    font-size: 40px
+    margin-top: 75px;
+    text-align: center
+
 }
