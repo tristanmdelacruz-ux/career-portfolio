@@ -5,7 +5,7 @@ body {
 }
 
 nav {
-    text-align: center;  /* centers the text vertically */
+    text-align: center;
 }
 
 nav a {
@@ -13,7 +13,8 @@ nav a {
     font-family: 'Fragment Mono', monospace;
     text-decoration: none;          /* removes the underline */            
     font-size: 25px;
-    margin: 0px 125px; /* 0 is the top and bottom margin and 50 is is the left and right */
+    margin: 0px 100px; /* 0 is the top and bottom margin and 50 is is the left and right */
+    text-align: center;
 }
 
 h1 {
@@ -60,5 +61,39 @@ p{
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 20px
+    margin-top: 20px;
+}
+
+.banner {
+    display: flex;
+    background-color: #f6e5d0ff;
+    border-radius: 30px;
+    margin: 50px 10px;
+}
+
+.banner-left {
+    width: 30%;
+
+}
+
+.banner-left img {
+    width: 100%;
+}
+
+.banner-right{
+    width: 70%;
+    font-family: 'Fragment Mono', monospace;  /* sets the font family to Bebas Neue */
+    padding-top: 100px;
+    line-height: 5px;
+    text-align: right;
+}
+
+.banner-right h1 {
+    text-align: right;
+    padding-right: 30px;
+}
+
+.banner-right h2 {
+    text-align: right;
+    padding-right: 30px;
 }
