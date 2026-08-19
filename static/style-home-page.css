@@ -69,6 +69,7 @@ p{
     background-color: #f6e5d0ff;
     border-radius: 30px;
     margin: 50px 10px;
+    align-items: flex-start;
 }
 
 .banner-left {
@@ -80,20 +81,20 @@ p{
     width: 100%;
 }
 
-.banner-right{
+.banner-right {
     width: 70%;
-    font-family: 'Fragment Mono', monospace;  /* sets the font family to Bebas Neue */
-    padding-top: 100px;
-    line-height: 5px;
+    font-family: 'Fragment Mono', monospace;
+    padding: 10px 30px 0px 0px;
+    line-height: 10px;
     text-align: right;
+    box-sizing: border-box;
+    align-self: flex-start;
 }
 
 .banner-right h1 {
     text-align: right;
-    padding-right: 30px;
 }
 
 .banner-right h2 {
     text-align: right;
-    padding-right: 30px;
 }
