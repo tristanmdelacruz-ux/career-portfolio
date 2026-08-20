@@ -48,34 +48,20 @@ p{
 
 }
 
-.hero {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    height: 500px;
-
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 20px;
-}
 
 .banner {
     display: flex;
     background-color: #f6e5d0ff;
-    border-radius: 30px;
-    margin: 50px 10px 10px 10px;
-    align-items: flex-start;
-    height: 223px;
-    overflow: hidden;
+
+    border-radius: 60px;
+    margin: 100px 10px 10px 10px;
+    padding-top: 1px;
+
+
 }
 
 .banner-left {
-    width: 30%;
+    width:30%;
 
 }
 
@@ -85,26 +71,51 @@ p{
 
 .banner-right {
     width: 70%;
-    font-family: 'Fragment Mono', monospace; /*padding: 10px 30px 0px 0px;*/
-    padding-right: 30px;
-    line-height: 10px;
-    text-align: right;
-    box-sizing: border-box;
-    align-self: flex-start;
+    padding-right: 60px
 }
 
 .banner-right h1 {
     text-align: right;
-    font-size: 500vw;
+    font-size: 90px;
+    margin: 0px 0px 0px 0px;
 }
 
 .banner-right h2 {
     text-align: right;
-    font-size: 500vw;
+    font-size: 30px;
+    margin: 5px 0px 0px 0px
 }
 
+.top-banner-line{
+    border: 1px solid black;
+    margin:50px 10px 50px 10px; /* top right bottom left  */
 
-hr {
-    border: 1px solid black;   
-    margin: 30px 0px 0px 0px; 
+}
+
+.bottom-banner-line {
+    border: 1px solid black;
+    margin:50px 10px 100px 10px; /* top right bottom left  */
+}
+
+.Hook h1 {
+    text-align: center;
+    font-size: 80px;
+    margin: 10px auto 5px auto;
+}
+
+.Skills h2{
+    font-size: 30px;
+    margin: 70px auto 70px auto;
+}
+
+.banner-text {
+    background-color: #f6e5d0ff;
+
+    border-radius:60px;
+    padding: 100px auto 100px auto;
+    margin: auto 100px auto 100px
+}
+
+.banner-line h2 {
+    margin: 10px auto 10px auto;
 }
