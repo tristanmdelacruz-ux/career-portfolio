@@ -48,7 +48,7 @@ p{
 
 }
 
-
+/* banner class */
 .banner {
     display: flex;
     background-color: #f6e5d0ff;
@@ -86,6 +86,7 @@ p{
     margin: 5px 0px 0px 0px
 }
 
+/* Hook banner line class */
 .top-banner-line{
     border: 1px solid black;
     margin:50px 10px 50px 10px; /* top right bottom left  */
@@ -103,19 +104,40 @@ p{
     margin: 10px auto 5px auto;
 }
 
+/* skills class */
 .Skills h2{
     font-size: 30px;
-    margin: 70px auto 70px auto;
+    margin: 200px auto 200px auto;
 }
 
-.banner-text {
+/* message class */
+.message-text {
     background-color: #f6e5d0ff;
 
     border-radius:60px;
-    padding: 100px auto 100px auto;
-    margin: auto 100px auto 100px
+    margin-right: 200px;
+    margin-left: 200px;
 }
 
-.banner-line h2 {
-    margin: 10px auto 10px auto;
+.message-text h2 {
+    padding: 50px 100px 50px 100px;
+}
+
+.under-message-text {
+    border: 1px solid black;
+    margin:50px 10px 50px 10px;
+}
+
+/* timeline class */
+
+.timeline-banner {
+    background-color: #f6e5d0ff;
+
+    border-radius:60px;
+    margin-right: 500px;
+    margin-left: 500px;
+}
+
+.timeline-banner h2 {
+    padding: 50px 100px 50px 100px;
 }
