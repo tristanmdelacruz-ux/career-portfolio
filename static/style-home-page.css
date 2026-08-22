@@ -82,6 +82,7 @@ p{
     font-size: 90px;
     margin: 0px 0px 0px 0px;
     font-weight: 800;
+    color:#2B59C3;
 }
 
 .banner-right h2 {
@@ -107,15 +108,17 @@ p{
 .Hook h1 {
     text-align: center;
     font-size: 80px;
-    margin: 10px auto 5px auto;
-    font-weight: 500;
+    margin: 10px auto 5px auto; 
 }
 
-/* skills class */
-.Skills h2{
-    font-size: 30px;
-    margin: 200px auto 200px auto;
+
+.Hook h1 strong {
+    text-align: center;
+    font-size: 80px;
+    margin: 10px auto 5px auto; 
+    color: #2B59C3;
 }
+
 
 /* message class */
 .message-text {
@@ -140,13 +143,13 @@ p{
 .timeline-banner {
     background-color: #f6e5d0ff;
 
-    border-radius:60px;
-    margin-right: 500px;
-    margin-left: 500px;
+    border-radius:30px;
+    margin: 200px 200px 200px 200px;
 }
 
 .timeline-banner h2 {
-    padding: 50px 100px 50px 100px;
+    font-size: 35px;
+    padding: 50px 30px 50px 30px;
 }
 
 /** Teams Sectiom */
@@ -159,7 +162,7 @@ p{
 
 .Teams-Left {
     display: flex;
-    width: 50%;
+    width   : 50%;
     
     align-items: center;
     justify-content: center ;
@@ -174,6 +177,7 @@ p{
     align-items: center;
 
     padding: 10px 10px 10px 10px;
+    margin: 30px auto 30px auto;
     border-radius: 6px;
 
     background-color:#f6e5d0ff; 
@@ -181,42 +185,50 @@ p{
 }
 
 .Teams-Right {
-    width: 50%;
+    width: 50%; 
 }
 
-.Teams-Right img {
-    display:block;
-    width: 70%;
-    height: auto;
-    max-width: 100%;
-
-    align-items: center;
-
-    padding: 10px 10px 10px 10px;
-    border-radius: 6px;
-
-    background-color:#f6e5d0ff; 
-}
 .Teams-Right h1 {
     text-align: left;
+    font-size: 50px;
+    margin-bottom: 1px;
+    line-height: 1.2;
+    white-space: normal;
+    word-wrap: break-word;
 }
 
 .Teams-Right h2 {
     text-align: left;
+    font-size: 30px;
 }
 
 .Teams-Right p {
     text-align: left;
+    font-size: 30px;
+}
+
+/* arrow bullet points */
+.arrow-list {
+    list-style: none; /* remove the round bullet point default */
+    padding-left: 0;    /* removes the default indentation browsers add to lists */
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.arrow-list li::before {
+    content: "→";   /* inserts the → character BEFORE each list item */
+    margin-right: 10px; /* adds space between the arrow and the text */
 }
 
 
+/*end banner */
 .end-banner {
     background-color:#f6e5d0ff;
 }
 
 .end-banner h1 {
     text-align: left;
-    margin: auto 20px auto 20px;
+    margin: 50px 20px auto 20px;
     font-size: 80px;
 }
 
@@ -236,13 +248,13 @@ p{
     font-family: var(--main-font);
     overflow: hidden; /* hides anything outside of the box */
     white-space: nowrap; /* wrap the line so it doesn't move to another line */
-    font-size: 30px; 
+    font-size: 40px; 
     
 }
 
 .Skills-conveyor {
     display: inline-block; /* makes the div only as wide as it's content */
-    animation: ticker 30s linear infinite; /* variable speed style direction duration */
+    animation: ticker 50s linear infinite; /* variable speed style direction duration */
 }
 
 .Skills-conveyor span {
@@ -285,4 +297,5 @@ p{
 .sticker-HX { bottom: 60%;  right: 25%; }
 .sticker-LEGACY { bottom: 75%;  right: 15%; }
 .sticker-FEP { bottom: 80%;  right: 1%; }
+.sticker-ASME { bottom: 75%; left: 15%; }
 
