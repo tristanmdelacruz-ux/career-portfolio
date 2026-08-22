@@ -132,7 +132,7 @@ p{
 
 .under-message-text {
     border: 1px solid black;
-    margin:50px 10px 50px 10px;
+    margin:100px 10px 50px 10px;
 }
 
 /* timeline class */
@@ -209,8 +209,80 @@ p{
     text-align: left;
 }
 
-.arrow-pointed-right img {
-    display: block;
-    margin: 0 auto;
-    margin-right: 50%;
+
+.end-banner {
+    background-color:#f6e5d0ff;
 }
+
+.end-banner h1 {
+    text-align: left;
+    margin: auto 20px auto 20px;
+    font-size: 80px;
+}
+
+
+.end-banner-contact {
+    padding-bottom:50px;
+}
+
+.end-banner-contact h2{
+    text-align:left;
+    margin: auto 20px auto 20px;
+}
+
+/* skills conveyor*/
+
+.Skills {
+    font-family: var(--main-font);
+    overflow: hidden; /* hides anything outside of the box */
+    white-space: nowrap; /* wrap the line so it doesn't move to another line */
+    font-size: 30px; 
+    
+}
+
+.Skills-conveyor {
+    display: inline-block; /* makes the div only as wide as it's content */
+    animation: ticker 30s linear infinite; /* variable speed style direction duration */
+}
+
+.Skills-conveyor span {
+    margin: 0px 30px; /* adding margin inbetween each skill */
+}
+
+@keyframes ticker {
+    0%   { transform: translateX(0); } /* start position - normal position */
+    100% { transform: translateX(-50%); } /* end position - move 50% to the left */
+}
+
+/* sticker movement next to heashot*/
+
+.headshot-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.headshot {
+    width: 100%;
+    display: block;
+}
+
+.sticker {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.sticker:hover {
+    transform: scale(1.3) rotate(10deg);
+}
+
+/* scattered positions */
+.sticker-TTM { bottom: 40%;  right: 30%; }
+.sticker-HX { bottom: 60%;  right: 25%; }
+.sticker-LEGACY { bottom: 75%;  right: 15%; }
+.sticker-FEP { bottom: 80%;  right: 1%; }
+

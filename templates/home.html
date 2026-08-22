@@ -3,23 +3,33 @@
 <html>
 
     <head>
-        <link rel="stylesheet" href="/static/style-home-page.css">        <!-- link rel tells the page that it is a stylesheet and href is the path to the stylesheet     -->
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@800&display=swap" rel="stylesheet">
-        <title>Tristan's Porfolio!</title> <!-- page title -->
+        <link rel="stylesheet" href="/static/style-home-page.css">              <!-- link rel tells the page that it is a stylesheet and href is the path to the stylesheet     -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--Import for Java AOS-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:
+                    ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=
+                    Unbounded:wght@800&display=swap" rel="stylesheet">          <!-- importing the Poppins Font-->
+        <title>Tristan's Porfolio!</title>                                      <!-- page title -->
     </head>
 
     <body>
-        <nav>                                     <!-- naviatgion bar of text-->
-            <a href="/">Home</a>                   <!-- navigation bar link to home page -->
-            <a href="/projects">Projects</a>        <!-- navigation bar link to projects page -->
-            <a href="/connect">Connect</a>           <!-- navigation bar link to about page -->
+        <nav>                                                                   <!-- naviatgion bar of text-->
+            <a href="/">Home</a>                                                <!-- navigation bar link to home page -->
+            <a href="/projects">Projects</a>                                    <!-- navigation bar link to projects page -->
+            <a href="/connect">Connect</a>                                      <!-- navigation bar link to about page -->
         </nav>
 
-        <div class="banner">
+        <div class="banner" data-aos="fade-up">                                 <!--Intro Banner with my name and headshot Container-->
             <div class="banner-left">
-                <img src="/static/Tristan_HX_HEADSHOT.jpg" alt="headshot">
+                <div class="headshot-container">
+                    <img src="/static/Tristan_HX_HEADSHOT.jpg" alt="headshot" class="headshot">
+        
+                    <img src="/static/FEP.png" alt="FEP Logo" class="sticker sticker-FEP">
+                    <img src="/static/HX.png" alt="HyperXite Logo" class="sticker sticker-HX">
+                    <img src="/static/LEGACY.png" alt="Legacy Logo" class="sticker sticker-LEGACY">
+                    <img src="/static/TTM_LOGO.png" alt="TTM Logo" class="sticker sticker-TTM">
+                </div>
             </div>
-            <div class="banner-right">
+            <div class="banner-right">                                          <!-- Right side of the banner wih my info-->
                 <h1>TRISTAN DELA CRUZ</h1>
                 <h2>University of California, Irvine</h2>
                 <h2>B.S. Biomedical Engineering</h2>
@@ -28,39 +38,63 @@
         </div>
 
 
-        <div class="Hook">
-
-            <hr class="top-banner-line">
-            <h1>A <strong>BME</strong> WITH <strong>VERSATILITY</strong></h1>
-            <h3>(biomedical engineer)</h3>
-            <hr class="bottom-banner-line">
-            
+        <div class="Hook">                                                      <!-- Container with my BME Hook-->
+            <hr class="top-banner-line">                                        <!--horitonal line-->
+            <h1>A <strong>BME</strong> WITH <strong>VERSATILITY</strong></h1>   <!--text-->
+            <h3>(biomedical engineer)</h3>                                      <!--text-->
+            <hr class="bottom-banner-line">                                     <!--horitonal line-->
         </div>
 
-        <div class="Skills">
-            <h2>SOLIDWORKS - ANSYS - 3D PRINTING - 2D DRAWINGS & DOCUMENTS - FINITE ELEMENT ANALYSIS(FEA)</h2>
+        <div class="Skills">                                                    <!--Container with my list of skills-->
+            <div class="Skills-conveyor">
+                <span>SOLIDWORKS</span>
+                <span>ANSYS</span>
+                <span>3D PRINTING</span>
+                <span>2D DRAWINGS & DOCUMENTS</span>
+                <span>FINITE ELEMENT ANALYSIS</span>
+                <span>PCB Manufacturing</span>
+                <span>Design of Experiments</span>
+                <span>Metal Machinery</span>
+                <span>Wood Machinery</span>
+                <span>Visual Studio Code</span>
+                <span>Ignition Automation</span>
+                <span>Python</span>
+                <span>HTML</span>
+                <span>Excel</span>
+                <!--loop-->
+                <span>SOLIDWORKS</span>
+                <span>ANSYS</span>
+                <span>3D PRINTING</span>
+                <span>2D DRAWINGS & DOCUMENTS</span>
+                <span>FINITE ELEMENT ANALYSIS</span>
+                <span>PCB Manufacturing</span>
+                <span>Design of Experiments</span>
+                <span>Metal Machinery</span>
+                <span>Wood Machinery</span>
+                <span>Visual Studio Code</span>
+                <span>Ignition Automation</span>
+                <span>Python</span>
+                <span>HTML</span>
+                <span>Excel</span>
+            </div>
         </div>
 
-        <hr class="under-message-text">
+        <hr class="under-message-text">                                         <!-- horizontal line-->
 
-        <div class="message-text">
-            <h2>My Journey begins when I took my first class of Biomedical Engineering, and I said Is this really what I want to do?</h2>
-        </div>
 
-        <hr class="under-message-text">
 
-        <div class="timeline-banner">
+        <div class="timeline-banner">                                           <!-- container for my teams message-->
             <h2>The People and Teams that have made me the man I am today!</h2>
         </div>
         
 
-        <div class="Teams">
-            <div class="Teams-Left">
+        <div class="Teams">                                                     <!-- container for my project team-->
+            <div class="Teams-Left">                                            <!-- left side of container for picture-->
                 <img src="/static/TTM_Intern_Expo_Photo.jpeg" alt="headshot">
             </div>
-            <div class="Teams-Right">
+            <div class="Teams-Right">                                           <!-- right side of container for blerb-->
                 <h1>TTM Technologies</h1>
-                <h2> -> Process Engineering Intern</h2>
+                <h2> -> Process Engineering Intern (2026)</h2>
                 <p>At TTM Technologies, I learned dry and wet proceesses to manufacture a Printed Circuit Board.
                     During the Internship, I got to lead four manufacturing process iniatives to improve production and quality
                     at the facility.</p>
@@ -68,19 +102,73 @@
         </div>
 
 
-        <div class="Teams">
-            <div class="Teams-Left">
+        <div class="Teams">                                                 <!-- container for my project team-->
+            <div class="Teams-Left">                                        <!-- left side of container for picture-->
                 <img src="/static/HX_DYNAMICS_SUBTEAM.jpg" alt="subteam photo">
             </div>
-            <div class="Teams-Right">
+            <div class="Teams-Right">                                       <!-- right side of container for blerb-->
                 <h1>UCI HyperXite</h1>
-                <h2> -> Dynamics Engineer</h2>
+                <h2> -> Braking Engineer (2026)</h2>
+                <h2> -> Dynamics Engineer (2025)</h2>
                 <p>UCI HyperXite is a Senior Design Project Team where we build a hyperloop pod 
                     capable of high speeds just using a linear induction motor for propulsion.</p>
 
             </div>
         </div>
 
+        <div class="Teams">                                                <!-- container for my project team-->
+            <div class="Teams-Left">                                       <!-- left side of container for picture-->
+                <img src="/static/Legacy_Robotics_Insta_Post.png" alt="instagram photo">
+            </div>
+            <div class="Teams-Right">                                       <!-- right side of container for blerb-->
+                <h1>UCI Legacy Robotics</h1>
+                <h2> -> Drone Team Lead (2026)</h2>
+                <h2> -> Dynamics Engineer (2025)</h2>
+                <p>UCI HyperXite is a Senior Design Project Team where we build a hyperloop pod 
+                    capable of high speeds just using a linear induction motor for propulsion.</p>
+
+            </div>
+        </div>
+
+        <div class="Teams">                                                 <!-- container for my project team-->
+            <div class="Teams-Left">                                        <!-- left side of container for picture-->
+                <img src="/static/LeDrone_Pic.jpg" alt="subteam photo">
+            </div>
+            <div class="Teams-Right">                                       <!-- right side of container for blerb-->
+                <h1>Fusion Engineering Project | Remote Controlled Cargo Drone</h1>
+                <h2> -> Mechanical Engineer (2025)</h2>
+                <p>FUSION ENGINEERING PROJECT (FEP) is an introductory project where they host yearly projects open to club members
+                    to gain more hands on and technical experience in engineering. This year, we made a Remote Controlled Cargo Drone
+                    capable of picking up light weight payloads.</p>
+            </div>
+        </div>
+
+        <div class="Teams">                                             <!-- container for my project team-->
+            <div class="Teams-Left">                                    <!-- left side of container for picture-->
+                <img src="/static/Kamayan_Tayo.png" alt="subteam photo">
+            </div>
+            <div class="Teams-Right">                                   <!-- right side of container for blerb-->
+                <h1>Fusion Engineering Project | Mobile Gestured Robotic Arm</h1>
+                <h2> -> Mechanical Engineer (2024)</h2>
+                <p>FUSION ENGINEERING PROJECT (FEP) is an introductory project where they host yearly projects open to club members
+                    to gain more hands on and technical experience in engineering. This year, we made a Mobile Gestured Robotic Arm
+                    capable of picking and storing light payload.</p>
+            </div>
+        </div>
+
+        <div class="end-banner">                                        <!-- container for end of page contact banner-->
+            <h1>Tristan Dela Cruz</h1>
+            <div class="end-banner-contact">
+                <h2> <u>LinkedIn</u></h2>
+                <h2> <u>Email</u></h2>
+            </div>
+        </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>     <!--Import for Java AOS-->
+    <script>
+        AOS.init();
+    </script>
     </body>
 
 </html>
