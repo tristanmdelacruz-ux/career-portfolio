@@ -1,6 +1,9 @@
+:root {
+    --main-font: 'Poppins', sans-serif;
+}
+
 body {
-    font-family: 'Fragment Mono', monospace;  /* sets the font family to Bebas Neue */
-    background-color: white;
+    font-family: var(--main-font);  /* sets the font family to Bebas Neue */
     color: black;
 }
 
@@ -10,7 +13,7 @@ nav {
 
 nav a {
     color: black;                 /* sets the color of the link to white */
-    font-family: 'Fragment Mono', monospace;
+    font-family: var(--main-font);
     text-decoration: none;          /* removes the underline */            
     font-size: 25px;
     margin: 0px 100px; /* 0 is the top and bottom margin and 50 is is the left and right */
@@ -19,21 +22,21 @@ nav a {
 
 h1 {
     color: black;
-    font-family: 'Fragment Mono', monospace;  /* sets the font family to Bebas Neue */
+    font-family: var(--main-font);   /* sets the font family to Bebas Neue */
     text-align: center;
     font-size: 40px;
 }
 
 h2 {
     color: black;
-    font-family: 'Fragment Mono', monospace;
+    font-family: var(--main-font);
     text-align: center;
     font-size: 20px;
 }
 
 h3 {
     color: black;
-    font-family: 'Fragment Mono', monospace;
+    font-family: var(--main-font);
     text-align: center;
     font-size: 20px;
     margin-top: 0.25px;
@@ -41,7 +44,7 @@ h3 {
 
 p{
     color: black;
-    font-family: 'Fragment Mono', monospace;
+    font-family: var(--main-font);
     font-size: 40px;
     margin-top: 75px;
     text-align: center;
@@ -78,12 +81,15 @@ p{
     text-align: right;
     font-size: 90px;
     margin: 0px 0px 0px 0px;
+    font-weight: 800;
 }
 
 .banner-right h2 {
     text-align: right;
     font-size: 30px;
-    margin: 5px 0px 0px 0px
+    margin: 5px 0px 0px 0px;
+
+    font-weight: 500;
 }
 
 /* Hook banner line class */
@@ -102,6 +108,7 @@ p{
     text-align: center;
     font-size: 80px;
     margin: 10px auto 5px auto;
+    font-weight: 500;
 }
 
 /* skills class */
@@ -140,4 +147,70 @@ p{
 
 .timeline-banner h2 {
     padding: 50px 100px 50px 100px;
+}
+
+/** Teams Sectiom */
+
+.Teams {
+    display: flex;
+    font-family: var(--main-font);
+    width: 100%;
+}
+
+.Teams-Left {
+    display: flex;
+    width: 50%;
+    
+    align-items: center;
+    justify-content: center ;
+} 
+
+.Teams-Left img {
+    display:block;
+    width: 70%;
+    height: auto;
+    max-width: 100%;
+
+    align-items: center;
+
+    padding: 10px 10px 10px 10px;
+    border-radius: 6px;
+
+    background-color:#f6e5d0ff; 
+
+}
+
+.Teams-Right {
+    width: 50%;
+}
+
+.Teams-Right img {
+    display:block;
+    width: 70%;
+    height: auto;
+    max-width: 100%;
+
+    align-items: center;
+
+    padding: 10px 10px 10px 10px;
+    border-radius: 6px;
+
+    background-color:#f6e5d0ff; 
+}
+.Teams-Right h1 {
+    text-align: left;
+}
+
+.Teams-Right h2 {
+    text-align: left;
+}
+
+.Teams-Right p {
+    text-align: left;
+}
+
+.arrow-pointed-right img {
+    display: block;
+    margin: 0 auto;
+    margin-right: 50%;
 }
