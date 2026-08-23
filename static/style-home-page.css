@@ -5,6 +5,7 @@
 body {
     font-family: var(--main-font);  /* sets the font family to Bebas Neue */
     color: black;
+    background-color: #F4EFEB;
 }
 
 nav {
@@ -249,6 +250,7 @@ p{
     overflow: hidden; /* hides anything outside of the box */
     white-space: nowrap; /* wrap the line so it doesn't move to another line */
     font-size: 40px; 
+    margin-bottom: 300px;
     
 }
 
