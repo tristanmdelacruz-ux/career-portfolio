@@ -57,7 +57,7 @@ p{
     background-color: #f6e5d0ff;
 
     border-radius: 60px;
-    margin: 100px 10px 10px 10px;
+    margin: 100px 10px 100px 10px;
     padding-top: 1px;
 
 
@@ -79,7 +79,7 @@ p{
 
 .banner-right h1 {
     text-align: right;
-    font-size: 90px;
+    font-size: 40px;
     margin: 0px 0px 0px 0px;
     font-weight: 800;
     color:#2B59C3;
@@ -96,13 +96,13 @@ p{
 /* Hook banner line class */
 .top-banner-line{
     border: 1px solid black;
-    margin:50px 10px 50px 10px; /* top right bottom left  */
+    margin:300px 10px 50px 10px; /* top right bottom left  */
 
 }
 
 .bottom-banner-line {
     border: 1px solid black;
-    margin:50px 10px 100px 10px; /* top right bottom left  */
+    margin:50px 10px 300px 10px; /* top right bottom left  */
 }
 
 .Hook h1 {
@@ -281,8 +281,8 @@ p{
 
 .sticker {
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     object-fit: contain;
     transition: transform 0.3s ease;
     cursor: pointer;
@@ -293,9 +293,9 @@ p{
 }
 
 /* scattered positions */
-.sticker-TTM { bottom: 40%;  right: 30%; }
-.sticker-HX { bottom: 60%;  right: 25%; }
-.sticker-LEGACY { bottom: 75%;  right: 15%; }
-.sticker-FEP { bottom: 80%;  right: 1%; }
-.sticker-ASME { bottom: 75%; left: 15%; }
+.sticker-TTM { bottom: 83%;  right: 1%; }
+.sticker-HX { bottom: 50%;  right: 25%; }
+.sticker-LEGACY { bottom: 65%;  right: 15%; }
+.sticker-FEP { bottom: 50%;  left: 25%; }
+.sticker-ASME { bottom: 65%; left: 15%; }
 
