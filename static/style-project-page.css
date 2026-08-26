@@ -5,7 +5,15 @@ body {
 }
 
 nav {
+    display: flex;
+    align-items: center;
     text-align: center;  /* centers the text vertically */
+    margin: 50px 5px 50px 5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 100px;
 }
 
 nav a {
@@ -13,6 +21,10 @@ nav a {
     font-family: 'Fragment Mono', monospace;
     text-decoration: none;          /* removes the underline */            
     padding: 10px 100px;
+}
+
+.nav-name {
+    margin-left: auto;
 }
 
 h1 {
