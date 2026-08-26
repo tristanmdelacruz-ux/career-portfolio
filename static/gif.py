@@ -10,6 +10,7 @@ image_paths = [
     static_dir / "HX_11.jpg",
     static_dir / "ASME_HEADSHOT.jpg",
     static_dir / "asme_2026.jpg",
+    static_dir / "TTM_Intern_Expo.jpg",
     
 ]
 
