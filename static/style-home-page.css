@@ -313,15 +313,15 @@ nav a {
 }
 
 .sticker-Ignition {
-    width: 200px;
+    width: 300px;
     top:20%;
-    left:70%;
+    left:60%;
 }
 
 .sticker-DOE {
-    width: 200px;
+    width: 300px;
     top: 60%;
-    left: 40%;
+    left: 20%;
 }
 
 .sticker-HX {
@@ -331,21 +331,21 @@ nav a {
 }
 
 .sticker-Suspension_Test_Rig {
-    width: 200px;
-    top:10%;
-    left:70%;
+    width: 300px;
+    top:5%;
+    left:60%;
 }
 
 .sticker-HX_BELL_CRANK {
-    width: 200px;
-    top:60%;
+    width: 300px;
+    top:70%;
     left:55%;
 }
 
 .sticker-hx_lateral_suspension {
-    width: 200px;
+    width: 300px;
     top: 70%;
-    left: 20%;
+    left: 10%;
 }
 
 .sticker-Legacy {
