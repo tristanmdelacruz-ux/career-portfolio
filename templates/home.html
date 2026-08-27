@@ -5,17 +5,17 @@
     <head>
         <link rel="stylesheet" href="/static/style-home-page.css">              <!-- link rel tells the page that it is a stylesheet and href is the path to the stylesheet     -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--Import for Java AOS-->
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:
-                    ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=
-                    Unbounded:wght@800&display=swap" rel="stylesheet">          <!-- importing the Poppins Font-->
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@800&family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <title>Tristan's Porfolio!</title>                                      <!-- page title -->
     </head>
 
     <body>
         <nav>                                                                   <!-- naviatgion bar of text-->
             <div class="nav-links">
-                <a href="/">home</a>                                            <!-- navigation bar link to home page -->
-                <a href="/projects">projects</a>                                <!-- navigation bar link to projects page -->
+                <a href="/">home</a>                                            <!-- navigation bar link to home page -->                               <!-- navigation bar link to projects page -->
                 <a href="/connect">connect</a>                                  <!-- navigation bar link to about page -->
             </div>
             <div class="nav-name">Tristan Dela Cruz</div>
@@ -94,14 +94,40 @@
                 <img src ="/static/intro.gif" alt="headshot">
             </div>
             <div class="intro-right">
-                <h3>Hello my name is Tristan Dela Cruz, I am a first generation college student as a fourth year Biomedical Engineering 
-                    Major at the University of California Irvine. </h3>
-                <h3>I entered into college with NO engineering experience, and now I am grateful to have joined three different
-                        college projects and interned at one of highest valued pcb manufacturing companies</h3>
-                <h3>Check out the teams and work I have produced throughout the years</h3>
+
+                <div class="flip-card">
+	                <div class="flip-card-inner">
+    	                <div class="flip-front">
+        	                <h1>WHO AM I?</h1>
+		                </div>
+                    <div class="flip-card-back">
+		                <div class="flip-back">
+        	                <h1>text</h1>
+		                </div>
+	                </div>
+	                </div>
+                </div>
+
             </div>
         </div>
 
+        <div class="orgs">
+            <div class="orgs-conveyor">
+                <span class="org-logo"><img src="/static/TTM_LOGO.png" alt="TTM Technologies"></span>
+                <span class="org-logo"><img src="/static/HX.png" alt="UCI HyperXite"></span>
+                <span class="org-logo"><img src="/static/LEGACY.png" alt="UCI Legacy Robotics"></span>
+                <span class="org-logo"><img src="/static/FEP.png" alt="FUSION Engineering Project"></span>
+                <span class="org-logo"><img src="/static/ASME.png" alt="UCI ASME"></span>
+                <!-- loop -->
+                <span class="org-logo"> <img src="/static/TTM_LOGO.png" alt=""></span>
+                <span class="org-logo"><img src="/static/HX.png" alt=""></span>
+                <span class="org-logo"><img src="/static/LEGACY.png" alt=""></span>
+                <span class="org-logo"><img src="/static/FEP.png" alt=""></span>
+                <span class="org-logo"><img src="/static/ASME.png" alt=""></span>
+
+            </div>
+
+        </div>
         <!--TTM-->
         <div class="Teams">                                                     <!-- container for my project team-->
             <div class="Teams-Left" data-aos="fade-right" data-aos-duration="700">                                            <!-- left side of container for picture-->
@@ -121,6 +147,9 @@
                 <figure class="sticker-item sticker-Ignition">
                     <img src="/static/Ignition_Automation_Logo.png" alt="Ignition Automation Logo">
                     <figcaption><em>Figure 1: Ignition Automation</em></figcaption>
+                    <div class="sticker-arrow">
+                        ↗
+                    </div>
                 </figure>
 
                 <figure class="sticker-item sticker-DOE">
@@ -264,9 +293,19 @@
         </div>
 
 
+    <!--Java Scripts-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>     <!--Import for Java AOS-->
     <script>
         AOS.init();
+    </script>
+
+    <script>
+    const firstBanner = document.getElementById('firstIntroBanner');
+    if (firstBanner) {
+        firstBanner.addEventListener('click', () => {
+            firstBanner.classList.toggle('is-flipped');
+        });
+    }
     </script>
 
     </body>
