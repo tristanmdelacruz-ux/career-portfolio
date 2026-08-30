@@ -14,11 +14,11 @@
 
     <body>
         <nav>                                                                   <!-- naviatgion bar of text-->
-            <div class="nav-links">
+            <div class="nav-links" data-aos="zoom-in" data-aos-duration="1500">
                 <a href="/">home</a>                                            <!-- navigation bar link to home page -->                               <!-- navigation bar link to projects page -->
                 <a href="/connect">connect</a>                                  <!-- navigation bar link to about page -->
             </div>
-            <div class="nav-name">Tristan Dela Cruz</div>
+            <div class="nav-name" data-aos="zoom-in" data-aos-duration="1500">Tristan Dela Cruz</div>
         </nav>
 
 
@@ -31,7 +31,7 @@
         </div>
 
         <!--SKILLS CONVEYOR-->
-        <div class="Skills">                                                    <!--Container with my list of skills-->
+        <div class="Skills" data-aos="slide-left" data-aos-duration="3000">                                                    <!--Container with my list of skills-->
             <div class="Skills-conveyor">
                 <span>SOLIDWORKS</span>
                 <span>ANSYS</span>
@@ -67,7 +67,7 @@
 
         <!--WELCOME-->
 
-        <div class="Welcome">
+        <div class="Welcome" data-aos="fade-down" data-aos-duration="1500">
             <h1>WELCOME!</h1>
             <h2>I'm Tristan Dela Cruz</h2>
             <div class="Welcome-tags">
@@ -78,24 +78,24 @@
         </div>
         
         <!--GIF & FLIP-->
-        <div class="intro">
+        <div class="intro" data-aos="fade-down" data-aos-duration="1500">
             <div class="intro-left">
                 <img src ="/static/intro.gif" alt="headshot">
             </div>
-            <div class="intro-right">
+            <div class="intro-right" data-aos="fade-down" data-aos-duration="1500">
                 <h1>Hello! My name is Tristan Dela Cruz! </h1>
                 <br>
                 <h1>I am <strong>First Generation College Student</strong> studying
                     <strong>Biomedical Engineering!</strong> I come from the Bay Area located only 30 minutes away from
                     San Fransciso. Then I moved far east of the Bay Area and now moved down here in Southern California
-                    at the<strong> Univeristy of California, Irvine</strong>
+                    at the<strong> University of California, Irvine</strong>
                 </h1>
                 <br>
                 <h1> Welcome to my <strong>Portfolio!</strong> Look around and see what interests you!</h1>
             </div>
         </div>
 
-        <div class="orgs">
+        <div class="orgs" data-aos="slide-right" data-aos-duration="3000">
             <div class="orgs-conveyor">
                 <span class="org-logo"><img src="/static/TTM_LOGO.png" alt="TTM Technologies"></span>
                 <span class="org-logo"><img src="/static/HX.png" alt="UCI HyperXite"></span>
@@ -111,19 +111,31 @@
             </div>
 
         </div>
+
+
+        <div class="Timeline" data-aos="fade-down" data-aos-duration="1500">
+            <h1>Check Out</h1>
+            <h2>The People who Push me to be a Better Engineer!</h2>
+        </div>
+
+        <hr class="Timeline-line">
+        
+
         <!--TTM-->
         <div class="Teams">                                                     <!-- container for my project team-->
             <div class="Teams-Left" data-aos="fade-right" data-aos-duration="700">                                            <!-- left side of container for picture-->
                 <img src="/static/TTM_Intern_Expo_Photo.jpeg" alt="headshot">
-                <h3><strong>Process Engineering Intern</strong></h3>
+                <h2><em>Process Engineering Intern</em></h2>
                 <h3><em>Summer 2026</em></h3>
-                <h3>PCB Manufacturing - Design of Experiment - Ignition Automation </h3>
             </div>
             <div class="Teams-Right" data-aos="fade-left" data-aos-duration="400">                                           <!-- right side of container for blerb-->
                 <h2>TTM Technologies</h2>
                 <h3>At TTM Technologies, I learned dry and wet proceesses to manufacture a Printed Circuit Board.
                     During the Internship, I got to lead four manufacturing process iniatives to improve production and quality
                     at the facility.</h3>
+                <p>PCB Manufacturing</p>
+                <p>Design of Experiment</p>
+                <p>Ignition Automation</p>
 
                 <img src="/static/TTM_LOGO.png" alt="TTM Logo" class="sticker sticker-TTM">
 
@@ -147,12 +159,10 @@
         <div class="Teams">                                                     <!-- container for my project team-->
             <div class="Teams-Left" data-aos="fade-right" data-aos-duration="700">                                            <!-- left side of container for picture-->
                 <img src="/static/HX_DYNAMICS_SUBTEAM.jpg" alt="HX_Subteam Image">
-                <h3><strong>Braking Engineer</strong></h3>
+                <h2><em>Braking Engineer</em></h2>
                 <h3><em>2026 - Present</em></h3>
-                <h3>Penumatic & Gas Spring System - Fail Saife Mechanisms - FEA</h3>
-                <h3><strong>Dynamics Engineer</strong></h3>
+                <h2><em>Dynamics Engineer</em></h2>
                 <h3><em>2025-2026</em></h3>
-                <h3>Springs & Damper Linkage System - Matlab/Simulink Simulations</h3>
             </div>
             <div class="Teams-Right" data-aos="fade-left" data-aos-duration="400">                                           <!-- right side of container for blerb-->
                 <h2>UCI HyperXite</h2>
@@ -160,10 +170,9 @@
                     and assemble a high speed pod that runs on a linear induction motor on top of an 
                     aluminum I-Beam track.
                 </h3>
-                <h3>
-                    I was first a Dynamics Engineer where I worked on the lateral suspension system.
-                    Now I work on the fail-safe braking system as a Braking Engineer.
-                </h3>
+                <p>Pneumatic & Gas Spring Systems</ps>
+                <p>Spring and Damper Suspension Linkage Systems</p>
+
                 <img src="/static/HX.png" alt="HX Logo" class="sticker sticker-HX">
 
                 <figure class="sticker-item sticker-Suspension_Test_Rig">
@@ -187,12 +196,10 @@
         <div class="Teams">                                                     <!-- container for my project team-->
             <div class="Teams-Left" data-aos="fade-right" data-aos-duration="700">                                            <!-- left side of container for picture-->
                 <img src="/static/UCI_LEGACY_SUBTEAM.jpg" alt="LEGACY_Subteam Image">
-                <h3><strong>Drone Team Lead</strong></h3>
+                <h2><em>Drone Team Lead</em></h2>
                 <h3><em>2025 - 2026</em></h3>
-                <h3>Drone Mechanics - Collaboration</h3>
-                <h3><strong>Dynamics Engineer</strong></h3>
+                <h2><em>Dynamics Engineer</em></h2>
                 <h3><em>2024-2025</em></h3>
-                <h3> Drive Systems - Static Structures</h3>
             </div>
             <div class="Teams-Right" data-aos="fade-left" data-aos-duration="400">                                           <!-- right side of container for blerb-->
                 <h2>UCI Legacy Robotics</h2>
@@ -200,11 +207,9 @@
                     assemble a Mars Rover to participate in the annual Univeristy Rover Challenge competing 
                     against 50+ universities.
                 </h3>
-                <h3>
-                    My first role was a Dynamics Engineer where I worked on the Wheel Hub of the Rover that consisted of a 
-                    3D printed wheel, drive motor, aluminum sheets for connection to the suspension, and 
-                    3D printed housings.
-                </h3>
+                <p>Drone Mechanics</p>
+                <p>Mars Rover Design & Manufacturing</p>   
+                <p>Leadership & Management</p>             
                 <img src="/static/LEGACY.png" alt="Legacy Logo" class="sticker sticker-Legacy">
 
                 <figure class="sticker-item sticker-legacy_drone">
@@ -223,15 +228,12 @@
         <div class="Teams">                                                     <!-- container for my project team-->
             <div class="Teams-Left" data-aos="fade-right" data-aos-duration="700">                                            <!-- left side of container for picture-->
                 <img src="/static/LeDrone_Pic.jpg" alt="LEGACY_Subteam Image">
-                <h3><strong>Project Advisor</strong></h3>
+                <h2><em>Project Advisor</em></h2>
                 <h3><em>2025-2026</em></h3>
-                <h3>Leadership - Guidance</h3>
-                <h3><strong>Drone Engineer</strong></h3>
+                <h2><em>Drone Engineer</em></h2>
                 <h3><em>2024 - 2025</em></h3>
-                <h3>Drone Mechanics - Solidworks</h3>
-                <h3><strong>Arm Engineer</strong></h3>
+                <h2><em>Arm Engineer</em></h2>
                 <h3><em>2023-2024</em></h3>
-                <h3> Arm Mechanics - Solidworks</h3>
             </div>
             <div class="Teams-Right" data-aos="fade-left" data-aos-duration="400">                                           <!-- right side of container for blerb-->
                 <h2>FUSION Engineering Project</h2>
@@ -239,18 +241,9 @@
                     year giving FUSIONatUCI General members a chance to gain hands on 
                     engineering experience straight out of college.
                 </h3>
-                <h3>
-                    During my first year on the project, I designed and manufactured a 
-                    robotic arm that is capable of connection to a chassis and end-effector 
-                    purposed to pick up light payloads and store them into the chassis
-                </h3>
-                <h3>
-                    Next, my second year, I joined the project again where I designed a Cargo Drone’s Frame.
-                </h3>
-                <h3>
-                    Lastly, I was honored to become a Project Advisor for three teams working 
-                    on a fire-extinguishing rover. 
-                </h3>
+                <p>Arm Mechanics</p>
+                <p>Drone Mechanics</p>
+                <p>Leadership & Guidance</p>
 
                 <img src="/static/FEP.png" alt="FEP Logo" class="sticker sticker-FEP">
 
@@ -270,8 +263,8 @@
         <div class="end-banner">                                        <!-- container for end of page contact banner-->
             <h1>Tristan Dela Cruz</h1>
             <div class="end-banner-contact">
-                <h2> <u>LinkedIn</u></h2>
-                <h2> <u>Email</u></h2>
+                <a href="www.linkedin.com/in/tristandelacruz"><em>Linkedin</em></a>
+                <a href="mailto:tristanmdelacruz@gmail.com"><em>Email</em></a>
             </div>
         </div>
 

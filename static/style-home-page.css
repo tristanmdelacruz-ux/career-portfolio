@@ -138,7 +138,7 @@ nav a {
 
 .Skills-conveyor {
     display: inline-block; /* makes the div only as wide as it's content */
-    animation: ticker 50s linear infinite; /* variable speed style direction duration */
+    animation: ticker 25s linear infinite; /* variable speed style direction duration */
 }
 
 .Skills-conveyor span {
@@ -203,7 +203,7 @@ nav a {
 .orgs-conveyor {
     display: inline-flex;
     align-items: center;
-    animation: ticker 30s linear infinite;
+    animation: ticker 5s linear infinite reverse;
 }
 
 .org-logo {
@@ -222,7 +222,30 @@ nav a {
     object-fit: contain;
 }
 
+/* Timeline */
 
+.Timeline {
+    text-align: center;
+    margin-top: 250px;
+}
+
+.Timeline h1{
+    font-size: 150px;
+    font-weight: 400;
+    margin:0;
+    line-height: 1;
+}
+
+.Timeline h2 {
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+
+}
+
+.Timeline-line {
+    border: 1px black solid;
+}
 
 /* INTRO */
 
@@ -285,10 +308,17 @@ nav a {
 
 }
 
+.Teams-Left h2 {
+    text-align: center;
+    font-size:30px;
+}
+
 .Teams-Left h3 {
     line-height: 20px;
     text-align: center;
 }
+
+
 
 
 .Teams-Right {
@@ -432,25 +462,36 @@ nav a {
 
 /*end banner */
 .end-banner {
-    background-color:#f6e5d0ff;
+    background-color:#2B59C3;
+    color:white;
+    border-radius: 10px;
 }
 
 .end-banner h1 {
-    text-align: left;
-    margin: 50px 20px auto 20px;
-    font-size: 80px;
+    text-align: center;
+    padding: 50px 20px 5px 20px;
+    font-size: 50px;
 }
 
 
 .end-banner-contact {
+    color:white;
     padding-bottom:50px;
+    text-align: center;
 }
 
 .end-banner-contact h2{
-    text-align:left;
+    text-align:center;
     margin: auto 20px auto 20px;
+    font-size: 20px;
 }
 
+.end-banner-contact a {
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+}
 
 /* sticker movement */
 
