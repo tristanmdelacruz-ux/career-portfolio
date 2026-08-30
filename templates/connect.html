@@ -6,26 +6,31 @@
     <head>
         <link rel="stylesheet" href="/static/style-connect-page.css">              <!-- link rel tells the page that it is a stylesheet and href is the path to the stylesheet     -->
 
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--Import for Java AOS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@800&family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Tristan's Porfolio!</title>
 
     </head>
     
     <body>
         <nav>                                                                   <!-- naviatgion bar of text-->
-            <div class="nav-links">
+            <div class="nav-links" data-aos="zoom-in" data-aos-duration="1500">
                 <a href="/">home</a>                                            <!-- navigation bar link to home page -->                               <!-- navigation bar link to projects page -->
                 <a href="/connect">connect</a>                                  <!-- navigation bar link to about page -->
             </div>
-            <div class="nav-name">Tristan Dela Cruz</div>
+            <div class="nav-name" data-aos="zoom-in" data-aos-duration="1500">Tristan Dela Cruz</div>
         </nav>
 
         
-        <h1>TRISTAN DELA CRUZ</h1>
-        <h2>Biomedical Engineering</h2>
-        <h2>University of California, Irvine</h2>
-        <h2>Senior</h2>
-            <p>Hello! My name is Tristan Dela Cruz, and I am a senior at the University of California, Irvine, majoring in Biomedical Engineering. 
-                I am passionate about learning manufacturing process of devices ranging from printed circuit boards to medical devices 
-            </p>
+
+
+        <!--Java Scripts-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>     <!--Import for Java AOS-->
+        <script>
+            AOS.init();
+            </script>
 
     </body>
 
