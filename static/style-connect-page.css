@@ -36,7 +36,48 @@ nav a {
     font-size: 20px;
 }
 
-.WIP {
-    margin-top: 300px;
-    text-align: center;
+/* Main Container */
+
+.main-container {
+    width:100%;
+    display: flex;
+    margin-top: 100px;
+}
+
+.left-container {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.left-container img {
+    display: flex;
+    width: 85%;
+    height: auto;
+    
+}
+
+.right-container {
+    width: 50%;
+}
+
+.right-container h1 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.resources{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-right: 50px;
+}
+
+.resources a {
+    text-align: right;
+    font-size: 20px;
+    color:black;
+    text-decoration: underline;
 }
