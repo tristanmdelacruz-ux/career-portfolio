@@ -1,18 +1,8 @@
-/* 
-h1 = 80xpx
-h2 = 50px
-h3 = 20px
-p = 10px
+/* h1 = 80xpx h2 = 50px h3 = 20px p = 10px */
 
-*/
+:root {--main-font: "Valley Sans";}
 
-:root {
-    --main-font: "Valley Sans";
-}
-
-/* * {
-    outline: 1px solid red;
-} */
+/* * {outline: 1px solid red;} */
 
 body {
     font-family: var(--main-font);  /* sets the font family to Bebas Neue */

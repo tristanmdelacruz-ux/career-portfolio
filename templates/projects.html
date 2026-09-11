@@ -1,42 +1,58 @@
-<!DOCTYPE html> <!-- initializing code format -->
-
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="/static/style-project-page.css"> <!-- Linking what style this page will be formatted in. In style.css-->
-        <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
-        <title>PROJECTS</title> <!-- title of the page-->
-    </head>
 
-    <body>
-        <nav>           <!-- navigation bar of text that has links to the other pages-->
-            <div class="nav-links">
-                <a href="/">Home</a>
-                <a href="/about">About Me</a>
-                <a href="/projects">Projects</a>
-            </div>
-            <div class="nav-name">Tristan Dela Cruz</div>
-        </nav>
+<head>
+    <link rel="stylesheet" href="/static/style-project-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Unbounded:wght@800&family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Projects | Tristan Dela Cruz</title>
+</head>
 
-        <h1>- PROJECTS -</h1> <!-- main header of the page-->
-        
-        
+<body>
+    <!--__Navigation Bar__-->
+
+    <nav>
+        <div class="nav-links" data-aos="zoom-in" data-aos-duration="1500">
+            <a href="/">home</a>
+            <a href="/projects">projects</a>
+            <a href="/connect">connect</a>
+        </div>
+        <div class="nav-name" data-aos="zoom-in" data-aos-duration="1500">Tristan Dela Cruz</div>
+    </nav>
+
+    <div class="title" data-aos="zoom-in" data-aos-duration="1500"> WORK-PROJECTS</div>
+
+    <div class="Grid-Container" data-aos="zoom-in" data-aos-duration="1500">
         {% for project in projects %}
-        <div class="project-container">  <!-- container for the project section-->
-            
-            <div class="project-left"> <!-- dividing the text into the left column-->
+        <div class="Card">
+            <div class="Card-title">
                 <h1>{{project.name}}</h1>
-                <h2>{{project.date}}</h2>
-                <h3>{{project.role}}</h3>
-                <h2>{{project.overview}}</h2>
             </div>
-            <div class="project-right"> <!-- dividing the text into the right column-->
-                <img src="/static/{{project.image}}" alt="Error">  <!-- image import -->
-                <p>Click Here for my Timeline!</p> <!-- caption-->
+            <div class="Card-Content">
+                <div class="Left">
+                    <p>{{project.role}}</p>
+                    <p>{{project.date}}</p>
+                    <p>{{project.overview}}</p>
+                    <p><strong>Concepts</strong></p>
+                    {% for concept in project.concepts %}
+                    <p>{{ concept }}</p>
+                    {% endfor %}
+                </div>
+                <div class="Right">
+                    <img src="/static/{{ project.image }}" alt="{{ project.name }}">
+                </div>
             </div>
-
+            <div class="card-popup">
+                <span>↗</span>
+            </div>
         </div>
         {% endfor %}
+    </div>
 
-    </body>
 
+
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
 </html>
