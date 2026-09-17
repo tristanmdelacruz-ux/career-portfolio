@@ -30,12 +30,19 @@
             </div>
             <div class="Card-Content">
                 <div class="Left">
-                    <p><strong>{{project.role}}</strong></p>
+                    <p><strong>Role:</strong></p>
+                    <p>{{project.role}}</p>
+                    <p><strong>Date:</strong></p>
                     <p><em>{{project.date}}</em></p>
+                    <p><strong>Project Overview:</strong></p>
                     <p>{{project.overview}}</p>
-                    <p><strong>Concepts</strong></p>
+                    <p><strong>Concepts:</strong></p>
                     {% for concept in project.concepts %}
                     <p>{{ concept }}</p>
+                    {% endfor %}
+                    <p><strong>Softwares:</strong></p>
+                    {% for software in project.softwares %}
+                    <p>{{ software }}</p>
                     {% endfor %}
                 </div>
                 <div class="Right">
