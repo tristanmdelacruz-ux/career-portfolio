@@ -76,7 +76,7 @@ nav a {
 .Left {
     width: 50%;
     margin-left: 10px;
-    font-size: clamp(12px, 1.2vw, 16px);
+    font-size: clamp(20px, 1.2vw, 16px);
 }
 
 .Right {
