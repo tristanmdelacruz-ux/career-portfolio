@@ -1,65 +1,42 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/style-project-page.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Unbounded:wght@800&family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Projects | Tristan Dela Cruz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Projects Preview | Tristan Dela Cruz</title>
 </head>
-
 <body>
-    <!--__Navigation Bar__-->
-
-    <nav>
-        <div class="nav-links" data-aos="zoom-in" data-aos-duration="1500">
-            <a href="/">home</a>
-            <a href="/projects">projects</a>
-            <a href="/connect">connect</a>
-        </div>
-        <div class="nav-name" data-aos="zoom-in" data-aos-duration="1500"><em>Tristan Dela Cruz</em></div>
-    </nav>
-
-    <div class="title" data-aos="zoom-in" data-aos-duration="1500"> WORK-PROJECTS</div>
-
-    <div class="Grid-Container" data-aos="zoom-in" data-aos-duration="1500">
-        {% for project in projects %}
-        <div class="Card">
-            <div class="Card-title">
-                <h1>{{project.name}}</h1>
+    <nav>                                                                   <!-- naviatgion bar of text-->
+            <div class="nav-links" data-aos="zoom-in" data-aos-duration="1500">
+                <a href="/">home</a>                                            <!-- navigation bar link to home page -->                               <!-- navigation bar link to projects page -->
+                <a href="/projects">projects</a>
+                <a href="/connect">connect</a>                                  <!-- navigation bar link to about page -->
             </div>
-            <div class="Card-Content">
-                <div class="Left">
-                    <p><strong>Role:</strong></p>
-                    <p>{{project.role}}</p>
-                    <p><strong>Date:</strong></p>
-                    <p><em>{{project.date}}</em></p>
-                    <p><strong>Project Overview:</strong></p>
-                    <p>{{project.overview}}</p>
-                    <p><strong>Concepts:</strong></p>
-                    {% for concept in project.concepts %}
-                    <p>{{ concept }}</p>
-                    {% endfor %}
-                    <p><strong>Softwares:</strong></p>
-                    {% for software in project.softwares %}
-                    <p>{{ software }}</p>
-                    {% endfor %}
-                </div>
-                <div class="Right">
-                    <img src="/static/{{ project.image }}" alt="{{ project.name }}">
-                </div>
-            </div>
-            <div class="card-popup">
-                <span>↗</span>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-
-
-
+            <div class="nav-name" data-aos="zoom-in" data-aos-duration="1500"><em>Tristan Dela Cruz</em></div>
+        </nav>
     
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
+    <main>
+        <div class="title">WORK-PROJECTS</div>
+        <section class="project-grid">
+            {% for project in projects %}
+            <article class="project-card">
+                <h2>{{ project.name }}</h2>
+                <div class="card-content">
+                    <div class="card-details">
+                        <p class="label">Role</p><p>{{ project.role }}</p>
+                        <p class="label">Date</p><p>{{ project.date }}</p>
+                        <p class="label">Project Overview</p><p>{{ project.overview }}</p>
+                        <p class="label">Concepts</p><p>{{ project.concepts | join(", ") }}</p>
+                        <p class="label">Softwares</p><p>{{ project.softwares | join(", ") }}</p>
+                    </div>
+                    <div class="card-image"><img src="/static/{{ project.image }}" alt="{{ project.name }}"></div>
+                </div>
+                <a class="detail-tab" href="/projects/{{ project.slug }}" aria-label="View {{ project.name }} case study"><b>↗</b></a>
+            </article>
+            {% endfor %}
+        </section>
+    </main>
 </body>
 </html>

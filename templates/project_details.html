@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style-project-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>{{ project.name }} | Preview</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-links"><a href="/projects">projects</a><a href="#result">results</a></div>
+        <div class="nav-name"><em>Tristan Dela Cruz</em></div>
+    </nav>
+    <main class="case-study">
+        <p class="preview-note">Preview only · draft copy</p>
+        <header class="case-header"><p>{{ project.role }} · {{ project.date }}</p><h1>{{ project.name }}</h1></header>
+        <section><h2>Purpose</h2><p>{{ project.purpose }}</p></section>
+        <section><h2>Why?</h2><ul>{% for reason in project.why %}<li>{{ reason }}</li>{% endfor %}</ul></section>
+        <section class="design-drafts"><h2>Design Drafts</h2><p>{{ project.design }}</p><div class="draft-images"><img src="/assets/{{ project.image }}" alt="{{ project.name }} design draft"><img src="/assets/{{ project.image }}" alt="{{ project.name }} design detail"><img src="/assets/{{ project.image }}" alt="{{ project.name }} design concept"></div></section>
+        <section><h2>Road Blocks</h2>{% for block in project.roadblocks %}<div class="roadblock"><h3>{{ block.title }}</h3><p>{{ block.text }}</p></div>{% endfor %}</section>
+        <section id="result" class="result"><h2>Result &amp; What I Learned</h2><p>{{ project.result }}</p><h3>What I learned</h3><ul>{% for lesson in project.lessons %}<li>{{ lesson }}</li>{% endfor %}</ul></section>
+        <a class="back-link" href="/projects">← Back to projects</a>
+    </main>
+</body>
+</html>
